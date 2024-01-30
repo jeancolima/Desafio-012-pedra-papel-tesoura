@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #ef476f;
+    --secondary-color: #06d6a0;
+    --third-color: #3a86ff;
+    --white: #FFF;
+    --black: #000;
+    --gray: #686868;
+    /* Fonts */
+    --primary-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#rock {
+    color: var(--primary-color);
+}
+
+#paper {
+    color: var(--secondary-color);
+}
+
+#scissors {
+    color: var(--third-color);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.result {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-height: 30px;
+}
+
+.enemy-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    color: var(--white);
+    background-color: var(--gray);
+    font-weight: 700;
+    transition: .4s;
+}
+
+.player-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.player-cards li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    color: var(--white);
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.player-cards li:hover {
+    transform: scale(105%);
+}
+
+#card-rock {
+    background-color: var(--primary-color);
+}
+
+#card-paper {
+    background-color: var(--secondary-color);
+}
+
+#card-scissors {
+    background-color: var(--third-color);
+}
